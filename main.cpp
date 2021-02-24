@@ -1,4 +1,8 @@
-//시간 , 타이밍을 다루는 변수에서 오버플로우가 일어남 지금 일부 劇測 long long 인데 나중에 문제가 생기면 unsigned long long 으로 변환 하시오.
+//Copyright 2021. 김교일 all rights reserved.
+
+
+
+//시간 , 타이밍을 다루는 변수에서 오버플로우가 일어나 unsigned long long 으로 변환함.
 
 #define _CRT_SECURE_NO_WARNINGS
 
