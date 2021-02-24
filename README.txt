@@ -1,9 +1,12 @@
+Copyright 2021. 김교일 all rights reserved.
+
 KOOM is a wolfenstein 3D style FPS game.
 =============================================================
 ---General---
-Copyright 2021. 김교일 all rights reserved.
 KOOM은 1학년 겨울방학 동안 취미로 만든 울펜슈타인 3D 스타일의 FPS게임 입니다.
 KOOM 은 KAIST + DOOM을 뜻하는데, 이는 게임요소들이 카이스트 캠퍼스에서 영감을 얻어 만들어졌기 때문입니다.
+
+아직 주석을 제대로 작성하지 않아 가독성이 떨어지고, 맞지 않는 부분이 많습니다. 이후 수정하도록 하겠습니다.
 
 ---About Game---
 [Goal]
