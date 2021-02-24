@@ -1,3 +1,5 @@
+//Copyright 2021. ê¹€êµì¼ all rights reserved.
+
 #ifndef WIN32_LEAN_AND_MEAN
 #define WIN32_LEAN_AND_MEAN
 #endif
@@ -95,14 +97,14 @@ float dist(float ax, float ay, float bx, float by)
 {
     return( sqrt((bx-ax)*(bx-ax)+(by-ay)*(by-ay)) );
 }
-int floatcomp(const void* elem1, const void* elem2) //³»¸²Â÷¼ø Á¤·Ä
+int floatcomp(const void* elem1, const void* elem2) //ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬
 {
     if(*(const float*)elem1 > *(const float*)elem2)
         return -1;
     return *(const float*)elem1 < *(const float*)elem2;
 }
 
-int floatcomp_rev(const void* elem1, const void* elem2) //¿À¸§Â÷¼ø Á¤·Ä
+int floatcomp_rev(const void* elem1, const void* elem2) //ì˜¤ë¦„ì°¨ìˆœ ì •ë ¬
 {
     if(*(const float*)elem1 < *(const float*)elem2)
         return -1;
@@ -321,7 +323,7 @@ int main(int argc , char *argv[])
                     client_socket[i] = new_socket;
                     printf("Adding to list of sockets at index %d \n" , i);
 
-                    //º¯¼ö ÃÊ±âÈ­ ÀÇ¹Ì°¡ ÀÖ³ª? ÀÖ´Âµí
+                    //ë³€ìˆ˜ ì´ˆê¸°í™” ì˜ë¯¸ê°€ ìžˆë‚˜? ìžˆëŠ”ë“¯
                     //px[i]=100; py[i]=100; pa[i]=3*PI/2;
                     pHP_arr[i]=100;
 
@@ -423,11 +425,11 @@ int main(int argc , char *argv[])
 /*
                         for(int j=0;j<max_clients;j++)
                         {
-                            if(s!=client_socket[j]) send( client_socket[j] , buffer , valread , 0 );//º¸³»¿Â ³ð »©°í Àü´Þ
+                            if(s!=client_socket[j]) send( client_socket[j] , buffer , valread , 0 );//ë³´ë‚´ì˜¨ ë†ˆ ë¹¼ê³  ì „ë‹¬
                         }*/
 
                     }
-                    else if(ptr[0]=='R')//DOOR ¹® ÀÎµ¦½º(mapW[index])
+                    else if(ptr[0]=='R')//DOOR ë¬¸ ì¸ë±ìŠ¤(mapW[index])
                     {
                         int mi;
                         ptr=strtok(NULL, " ");
@@ -436,13 +438,13 @@ int main(int argc , char *argv[])
                     }
 
 
-                    //ÀÌÁ¦ µ¥ÀÌÅÍ¸¦ ¾÷µ¥ÀÌÆ® ½ÃÄÑ ÁÖÀÚ
-                    //¸Ê, ÀÚ½Å HP, ´Ù¸¥ Å¬¶óÀÌ¾ðÆ® À§Ä¡
+                    //ì´ì œ ë°ì´í„°ë¥¼ ì—…ë°ì´íŠ¸ ì‹œì¼œ ì£¼ìž
+                    //ë§µ, ìžì‹  HP, ë‹¤ë¥¸ í´ë¼ì´ì–¸íŠ¸ ìœ„ì¹˜
                     /*
                     if(
 					for(int j=0;j<max_clients;j++)
                     {
-                        if(s!=client_socket[j]) send( client_socket[j] , buffer , valread , 0 );//º¸³»¿Â ³ð »©°í Àü´Þ
+                        if(s!=client_socket[j]) send( client_socket[j] , buffer , valread , 0 );//ë³´ë‚´ì˜¨ ë†ˆ ë¹¼ê³  ì „ë‹¬
                     }
                     */
 					//send( s , buffer , valread , 0 );
@@ -450,8 +452,8 @@ int main(int argc , char *argv[])
             }
         }
 
-        //Å¬¶óÀÌ¾ðÆ® µ¥ÀÌÅÍ ¾÷µ¥ÀÌÆ®
-        //D ´Ù¸¥ Å¬¶óÀÌ¾ðÆ® À§Ä¡
+        //í´ë¼ì´ì–¸íŠ¸ ë°ì´í„° ì—…ë°ì´íŠ¸
+        //D ë‹¤ë¥¸ í´ë¼ì´ì–¸íŠ¸ ìœ„ì¹˜
 /*
         struct timeval time_now{};
         gettimeofday(&time_now, nullptr);
