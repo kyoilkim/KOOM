@@ -4,7 +4,6 @@ KOOM is a wolfenstein 3D style FPS game.
 =============================================================
 ---General---
 KOOM은 1학년 겨울방학 동안 취미로 만든 울펜슈타인 3D 스타일의 FPS게임 입니다.
-KOOM 은 KAIST + DOOM을 뜻하는데, 이는 게임요소들이 카이스트 캠퍼스에서 영감을 얻어 만들어졌기 때문입니다.
 
 KOOM은 싱글플레이어 버전과 멀티플레이어 버전이 따로 존재합니다. 현 디렉토리는 싱글플레이어에 대한 내용이고, 멀티플레이어 버전에 대한 내용은 KOOM/Multiplayer 를 참고해주세요. 
 
@@ -130,3 +129,6 @@ https://www.youtube.com/user/thecplusplusguy/playlists
 
 더 생각나는 대로 추가하겠습니다.
 ------
+
+Future :
+Implement delta time.
