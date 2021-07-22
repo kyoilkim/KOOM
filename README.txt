@@ -7,6 +7,8 @@ KOOM is Wolfenstein 3D style FPS game written in C(++).
 There are singleplayer version and multiplayer version. This directory is about singleplayer. You can get information about multiplayer version in KOOM/Multiplayer.
 I am sorry that there isn't great comments in source file. I will edit them.
 
+Demo : https://www.youtube.com/watch?v=4Tpoqmd-HOg
+
 ---About Game---
 Download Release0.0.2.zip, then unzip it. Double click GAME.exe to play this game. (Only windows x64 is competible)
 [Goal]
